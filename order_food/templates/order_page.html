@@ -1,0 +1,15 @@
+<!-- order_page.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Food</title>
+</head>
+<body>
+    <h2>Choose Your Food and Quantity</h2>
+    <form method="post" action="{% url 'order_food:order-food' %}">
+        {% csrf_token %}
+            {{form}}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

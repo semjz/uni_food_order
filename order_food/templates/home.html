@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <nav>
+        <a href="auth/login/">Login</a> |
+        <a href="{% url 'authentication:sign_up' %}">Sign up</a>
+    </nav>
+    <p>Welcome to Uni order food app!<p>
+{%endblock content%}
